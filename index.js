@@ -6,11 +6,21 @@
 
     document.querySelector('.top-container').src = recipe.strMealThumb;
 
-    const button = document.querySelector("#randomize-btn");
-    button.addEventListener("click", () => {
+    const button = document.querySelector('#randomize-btn');
+    button.addEventListener('click', () => {
         const unhideDiv = document.querySelector('.bottom-container');
         if (unhideDiv.classList.contains('hidden')) {
             unhideDiv.classList.remove('hidden');
-    }});
+        }    
+
+        const updateList = document.querySelector('#ing-list')
+        updateList.innerHTML = `
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul> 
+        `
+    });
   
 })();
