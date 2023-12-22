@@ -2,36 +2,47 @@ body {
     margin: 0;
     height: 100vh; 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; 
     background-color: bisque;
-
+    overflow-y: auto; 
 }
 
 .main-body {
     background-color: rgb(84, 51, 93);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 90%;
+    flex: 1; 
+}
+
+#title {
+    background-color: rgb(235, 153, 153);
+    text-align: center;
+    padding: 10px;
 }
 
 .top-container {
     background-color: aquamarine;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: 30rem; 
+    overflow-y: auto; 
 }
 
 #ingredients, #instructions {
     padding: 10px;
+    text-align: center;
+    background-color: white;
+    height: 100%; 
+    width: 50%;
+    overflow: auto;
 }
 
 .bottom-container {
     display: flex;
     background-color: brown;
-    margin: 10px;
+    justify-content: center;
+    height: 30rem;
 }
+
 
 #btn {
     background-color: cadetblue;
