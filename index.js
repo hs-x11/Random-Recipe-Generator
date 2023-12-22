@@ -5,4 +5,12 @@
     console.log(recipe);
 
     document.querySelector('.top-container').src = recipe.strMealThumb;
+
+    const button = document.querySelector("#randomize-btn");
+    button.addEventListener("click", () => {
+        const unhideDiv = document.querySelector('.bottom-container');
+        if (unhideDiv.classList.contains('hidden')) {
+            unhideDiv.classList.remove('hidden');
+    }});
+  
 })();

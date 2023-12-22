@@ -43,7 +43,7 @@ body {
     height: 30rem;
 }
 
-
-#btn {
-    background-color: cadetblue;
+.hidden {
+    display: none;
 }
+
