@@ -3,18 +3,21 @@
     const button = document.querySelector('#randomize-btn');
     button.addEventListener('click', async () => {
         try {
-            const fetchRecipe = await axios.get('https://www.themealdb.com/api/json/v1/1/lookup.php?i=53084');
+            const fetchRecipe = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
             let recipe = fetchRecipe.data.meals;
             console.log(recipe);
 
-            const unhideDiv = document.querySelector('.bottom-container');
-            if (unhideDiv.classList.contains('hidden')) {
-                unhideDiv.classList.remove('hidden');
-            }    
+            const unhideDivs = document.querySelectorAll('.hidden');
+            unhideDivs.forEach(div => {
+                if (div.classList.contains('hidden')) {
+                    div.classList.remove('hidden');
+                }
+            });
 
             let recipeInfo = '';
             let updateList = document.querySelector('#ingredients-list');
             let updateInstructions = document.querySelector('#instructions-list');
+            let updateImg = document.querySelector('#recipe-image');
 
             recipe.forEach(object => {
                 for (let i = 1; i <= 20; i++) {
@@ -24,13 +27,12 @@
 
                     if (measure && ingredient && noNullPic !== 'null') {
                         recipeInfo += `<li>${measure} ${ingredient}</li>`;
-                    } else {
-                        catchError = document.querySelector('.bottom-container');
-                        catchError.textContent = 'This recipe has an error, please click the randomize button to find another!';
-                    }
+                    } 
                 }
 
                 updateInstructions.textContent = object.strInstructions;
+
+                updateImg.src = object.strMealThumb;
             });
             updateList.innerHTML = `<ul>${recipeInfo}</ul>`;
 
