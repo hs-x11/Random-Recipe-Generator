@@ -14,16 +14,16 @@
 
             let recipeInfo = '';
             let updateList = document.querySelector('#ing-list')
+
             recipe.forEach(object => {
-            recipeInfo += `
-                <ul>
-                    <li>${object.strIngredient1}</li>
-                    <li>${object.strIngredient2}</li>
-                    <li>${object.strIngredient3}</li>
-                </ul> 
-                `;
-                updateList.innerHTML = recipeInfo;
+                for (let i = 1; i <= 20; i++) {
+                    let measure = object[`strMeasure${i}`];
+                    let ingredient = object[`strIngredient${i}`];
+  
+                    recipeInfo += `<li>${measure} ${ingredient}</li>`;
+                }
             });
+            updateList.innerHTML = `<ul>${recipeInfo}</ul>`;
 
         } catch (error) {
             //Write something here for errors
