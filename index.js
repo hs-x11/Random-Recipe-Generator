@@ -16,23 +16,27 @@
 
             let recipeInfo = '';
             let updateList = document.querySelector('#ingredients-list');
-            let updateInstructions = document.querySelector('#instructions-list');
-            let updateImg = document.querySelector('#recipe-image');
 
-            recipe.forEach(object => {
+            recipe.forEach((api) => {
                 for (let i = 1; i <= 20; i++) {
-                    let measure = object[`strMeasure${i}`];
-                    let ingredient = object[`strIngredient${i}`];
-                    let noNullPic = object[`strMealThumb`];
+                    let measure = api[`strMeasure${i}`];
+                    let ingredient = api[`strIngredient${i}`];
+                    let noNullPic = api[`strMealThumb`];
 
                     if (measure && ingredient && noNullPic !== 'null') {
                         recipeInfo += `<li>${measure} ${ingredient}</li>`;
                     } 
                 }
 
-                updateInstructions.textContent = object.strInstructions;
+                let updateImg = document.querySelector('#recipe-image');
+                updateImg.src = api.strMealThumb;
 
-                updateImg.src = object.strMealThumb;
+                let updateRecipeName = document.querySelector('#welcome-title');
+                updateRecipeName.textContent = api.strMeal;
+
+                let updateInstructions = document.querySelector('#instructions-list');
+                updateInstructions.textContent = api.strInstructions;
+
             });
             updateList.innerHTML = `<ul>${recipeInfo}</ul>`;
 
