@@ -38,7 +38,7 @@
                 updateInstructions.textContent = api.strInstructions;
 
             });
-            updateList.innerHTML = `<ul>${recipeInfo}</ul>`;
+            updateList.innerHTML = recipeInfo;
 
 
         

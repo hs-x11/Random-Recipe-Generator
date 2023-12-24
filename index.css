@@ -1,25 +1,22 @@
 body {
     margin: 0;
-    height: 100vh; 
-    display: flex;
-    flex-direction: column; 
+    padding: 0;
+    height: 100%;
     background-color: bisque;
-    overflow-y: auto; 
 }
 
 .main-body {
     background-color: rgb(84, 51, 93);
-    flex: 1; 
 }
 
 #title {
-    background-color: rgb(235, 153, 153);
+    background-color: bisque;
     text-align: center;
     padding: 10px;
 }
 
 .top-container {
-    background-color: aquamarine;
+    background-color: bisque;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -30,17 +27,15 @@ body {
 #ingredients, #instructions {
     padding: 10px;
     text-align: center;
-    background-color: white;
+    background-color: bisque;
     height: 100%; 
-    width: 50%;
-    overflow: auto;
+    width: 40%;
 }
 
 .bottom-container {
     display: flex;
-    background-color: brown;
+    background-color: bisque;
     justify-content: center;
-    height: 30rem;
 }
 
 .hidden {
@@ -48,5 +43,5 @@ body {
 }
 
 li {
-    list-style-type: none
+    list-style-type: none;
 }
