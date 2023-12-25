@@ -29,7 +29,7 @@
                     } 
                 }
 
-                let updateImg = document.querySelector('#welcome-img');
+                let updateImg = document.querySelector('#recipe-img');
                 updateImg.src = api.strMealThumb;
 
                 let updateRecipeName = document.querySelector('#welcome-title');
