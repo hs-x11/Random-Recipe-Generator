@@ -79,27 +79,23 @@ body {
     color: black;
 }
 
-.top-container {
-    background-color: bisque;
-    padding: 10px;
+.main-body {
     display: flex;
+    background-color: white;
     justify-content: center;
-    min-height: 30rem; 
-    overflow-y: auto; 
+    padding: 10px;
 }
 
 #ingredients, #instructions {
-    padding: 10px;
-    text-align: center;
-    background-color: bisque;
+    padding: 30px;
+    background-color: white;
     min-height: 100%; 
     max-width: 40%;
 }
 
-.bottom-container {
-    display: flex;
-    background-color: bisque;
-    justify-content: center;
+
+#h3-center {
+    text-align: center;
 }
 
 .hidden {

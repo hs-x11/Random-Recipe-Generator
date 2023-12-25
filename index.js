@@ -7,12 +7,13 @@
             let recipe = fetchRecipe.data.meals;
             console.log(recipe);
 
-            const unhideDivs = document.querySelectorAll('.hidden');
-            unhideDivs.forEach(div => {
-                if (div.classList.contains('hidden')) {
-                    div.classList.remove('hidden');
-                }
-            });
+            const mainBodyDiv = document.querySelector('.main-body');
+            mainBodyDiv.classList.remove('hidden');
+
+            const showcaseDiv = document.querySelector('.recipe-showcase');
+            showcaseDiv.classList.add('hidden');
+            
+
 
             let recipeInfo = '';
             let updateList = document.querySelector('#ingredients-list');
@@ -24,11 +25,11 @@
                     let noNullPic = api[`strMealThumb`];
 
                     if (measure && ingredient && noNullPic !== 'null') {
-                        recipeInfo += `<li>${measure} ${ingredient}</li>`;
+                        recipeInfo += `<li>▸ ${measure} ‐ ${ingredient}</li>`;
                     } 
                 }
 
-                let updateImg = document.querySelector('#recipe-image');
+                let updateImg = document.querySelector('#welcome-img');
                 updateImg.src = api.strMealThumb;
 
                 let updateRecipeName = document.querySelector('#welcome-title');
