@@ -82,6 +82,7 @@ body {
     display: flex;
     flex-direction: column;
     color: #f9faf8;
+    cursor:pointer;
 }
 
 .square > p {
