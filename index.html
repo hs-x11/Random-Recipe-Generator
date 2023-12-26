@@ -19,14 +19,17 @@
             <h1 id='welcome-title'>Welcome</h1>
 
             <div id="greeting-container">
-                <p id='greeting-msg'>Before you begin generating a random recipe, please enter your name below!</p>
+                <p id='greeting-msg'>Before you begin, please enter your name below!</p>
                 <form id="name-form">
                     <input type="text" id="name-input" required>
-                    <button type="submit" id="submit-btn" disabled>Start Generating</button>
+                    <button type="submit" id="submit-btn">Submit</button>
                 </form>
             </div>
 
-            <button id='randomize-btn'>Randomize!</button>
+            <div class='button-container hidden'>
+                <button id='randomize-btn'>Randomize!</button>
+              </div>
+              
         </div>
 
     </div>

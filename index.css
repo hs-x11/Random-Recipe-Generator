@@ -23,7 +23,6 @@ body {
     border-radius: 20px;
 }
 
-
 #welcome-text {
     flex: 1; 
     padding: 10px;
@@ -31,7 +30,6 @@ body {
 
 #greeting-container {
     text-align: center;
-    margin-top: 50px;
 }
 
 #name-input {
@@ -39,11 +37,7 @@ body {
 }
 
 #submit-btn {
-    cursor: not-allowed;
-}
-
-#submit-btn:disabled {
-    background-color: #ccc;
+    cursor:pointer;
 }
 
 #recipe-showcase {
