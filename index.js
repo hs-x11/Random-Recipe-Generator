@@ -1,5 +1,13 @@
 !(async function () { 
 
+    const toggleView = () => {
+        const mainBodyDiv = document.querySelector('.main-body');
+        mainBodyDiv.classList.remove('hidden');
+
+        const showcaseDiv = document.querySelector('.recipe-showcase');
+        showcaseDiv.classList.add('hidden');
+    };
+    
     const recipeFormatting = (recipe) => {
         let recipeInfo = '';
         let updateList = document.querySelector('#ingredients-list');
@@ -57,14 +65,6 @@
             //Write something here for errors
         }
     });
-
-    const toggleView = () => {
-        const mainBodyDiv = document.querySelector('.main-body');
-        mainBodyDiv.classList.remove('hidden');
-
-        const showcaseDiv = document.querySelector('.recipe-showcase');
-        showcaseDiv.classList.add('hidden');
-    };
 
     const pizza = document.querySelector('#pizza');
     pizza.addEventListener('click', async () => {

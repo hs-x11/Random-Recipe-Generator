@@ -69,12 +69,10 @@ body {
     margin: auto;
     transition: all .2s ease-in-out; 
 }
-
 .border:hover {
     cursor:pointer;
     transform: scale(1.1); 
 }
-
 .border img {
     height: 100%;
     max-width: 100%;
@@ -89,8 +87,6 @@ body {
     flex-direction: column;
     color: #f9faf8;
 }
-
-
 .square > p {
     text-align: center;
     padding-top: 5px;
@@ -104,16 +100,18 @@ body {
     background-color: white;
     padding: 1rem;
 }
+
 #recipe-info {
     display: flex;
     justify-content: center;
     background-color: white;
     padding: 1rem;
 }
-
 #recipe-img {
     max-width: 20rem;
     margin: auto;
+    border: rgb(212, 122, 122);
+    border-style: solid;
 }
 
 #ingredients, #instructions {
@@ -122,7 +120,6 @@ body {
     min-height: 100%; 
     max-width: 40%;
 }
-
 
 #h3-center {
     text-align: center;
@@ -150,12 +147,10 @@ li {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
-
 #randomize-btn:hover {
 	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
 	background-color:#dfdfdf;
 }
-
 #randomize-btn:active {
 	position:relative;
 	top:1px;
