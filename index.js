@@ -50,12 +50,7 @@
             let recipe = fetchRecipe.data.meals;
             console.log(recipe);
 
-            const mainBodyDiv = document.querySelector('.main-body');
-            mainBodyDiv.classList.remove('hidden');
-
-            const showcaseDiv = document.querySelector('.recipe-showcase');
-            showcaseDiv.classList.add('hidden');
-            
+            toggleView();
             recipeFormatting(recipe);
 
         } catch (error) {
@@ -63,18 +58,21 @@
         }
     });
 
+    const toggleView = () => {
+        const mainBodyDiv = document.querySelector('.main-body');
+        mainBodyDiv.classList.remove('hidden');
+
+        const showcaseDiv = document.querySelector('.recipe-showcase');
+        showcaseDiv.classList.add('hidden');
+    };
+
     const pizza = document.querySelector('#pizza');
     pizza.addEventListener('click', async () => {
         try {
             const fetchRecipe = await axios.get('https://www.themealdb.com/api/json/v1/1/lookup.php?i=53014');
             let recipe = fetchRecipe.data.meals;
 
-            const mainBodyDiv = document.querySelector('.main-body');
-            mainBodyDiv.classList.remove('hidden');
-
-            const showcaseDiv = document.querySelector('.recipe-showcase');
-            showcaseDiv.classList.add('hidden');
-            
+            toggleView();
             recipeFormatting(recipe);
 
         } catch (error) {
@@ -88,12 +86,7 @@
             const fetchRecipe = await axios.get('https://www.themealdb.com/api/json/v1/1/lookup.php?i=52805');
             let recipe = fetchRecipe.data.meals;
 
-            const mainBodyDiv = document.querySelector('.main-body');
-            mainBodyDiv.classList.remove('hidden');
-
-            const showcaseDiv = document.querySelector('.recipe-showcase');
-            showcaseDiv.classList.add('hidden');
-            
+            toggleView();
             recipeFormatting(recipe);
 
         } catch (error) {
@@ -107,12 +100,7 @@
             const fetchRecipe = await axios.get('https://www.themealdb.com/api/json/v1/1/lookup.php?i=52813');
             let recipe = fetchRecipe.data.meals;
 
-            const mainBodyDiv = document.querySelector('.main-body');
-            mainBodyDiv.classList.remove('hidden');
-
-            const showcaseDiv = document.querySelector('.recipe-showcase');
-            showcaseDiv.classList.add('hidden');
-            
+            toggleView();
             recipeFormatting(recipe);
 
         } catch (error) {

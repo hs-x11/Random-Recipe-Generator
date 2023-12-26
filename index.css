@@ -67,6 +67,12 @@ body {
     max-width: 250px;
     min-height: 250px;
     margin: auto;
+    transition: all .2s ease-in-out; 
+}
+
+.border:hover {
+    cursor:pointer;
+    transform: scale(1.1); 
 }
 
 .border img {
@@ -82,8 +88,8 @@ body {
     display: flex;
     flex-direction: column;
     color: #f9faf8;
-    cursor:pointer;
 }
+
 
 .square > p {
     text-align: center;
@@ -144,10 +150,12 @@ li {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
+
 #randomize-btn:hover {
 	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
 	background-color:#dfdfdf;
 }
+
 #randomize-btn:active {
 	position:relative;
 	top:1px;
