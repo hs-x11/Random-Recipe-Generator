@@ -8,33 +8,55 @@
         showcaseDiv.classList.add('hidden');
     };
     
+    const randomRecipeFormatting = (recipe) => {
+        let ingredients = document.querySelector('#ingredients-list');
+        let recipeInfo = '';
+
+        recipe.ingredients.forEach(ingredient => {
+            recipeInfo += `<li> ▸${ingredient}</li>`;
+        });
+
+        ingredients.innerHTML = recipeInfo;
+
+        let updateImg = document.querySelector('#recipe-img');
+        updateImg.src = recipe.image;
+
+        let updateRecipeName = document.querySelector('#welcome-title');
+        updateRecipeName.textContent = recipe.name;
+
+        let updateInstructions = document.querySelector('#instructions-list');
+        updateInstructions.textContent = recipe.instructions;
+
+    };
+
+
     const recipeFormatting = (recipe) => {
         let recipeInfo = '';
         let updateList = document.querySelector('#ingredients-list');
-
+    
         recipe.forEach((api) => {
             for (let i = 1; i <= 20; i++) {
                 let measure = api[`strMeasure${i}`];
                 let ingredient = api[`strIngredient${i}`];
-                let noNullPic = api[`strMealThumb`];
-
-                if (measure && ingredient && noNullPic !== 'null') {
-                    recipeInfo += `<li>▸ ${measure} ‐ ${ingredient}</li>`;
+    
+                if (measure && ingredient) {
+                    recipeInfo += `<li>▸ ${measure} ${ingredient}</li>`;
                 } 
             }
-
+    
             let updateImg = document.querySelector('#recipe-img');
             updateImg.src = api.strMealThumb;
-
+    
             let updateRecipeName = document.querySelector('#welcome-title');
             updateRecipeName.textContent = api.strMeal;
-
+    
             let updateInstructions = document.querySelector('#instructions-list');
             updateInstructions.textContent = api.strInstructions;
-
+    
         });
         updateList.innerHTML = recipeInfo;
     };
+    
 
     const submitBtn = document.querySelector('#submit-btn');
     submitBtn.addEventListener('click', async (event) => {
@@ -54,12 +76,16 @@
     const button = document.querySelector('#randomize-btn');
     button.addEventListener('click', async () => {
         try {
-            const fetchRecipe = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
-            let recipe = fetchRecipe.data.meals;
+            const response = await axios.get('recipes.json');
+            const recipes = response.data;
+    
+            const randomRecipe = Math.floor(Math.random() * recipes.length);
+            let recipe = recipes[randomRecipe]; 
+    
             console.log(recipe);
-
+    
             toggleView();
-            recipeFormatting(recipe);
+            randomRecipeFormatting(recipe);
 
         } catch (error) {
             //Write something here for errors

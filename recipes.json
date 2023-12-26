@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Savory Stuffed Peppers",
+      "ingredients": ["3 large bell peppers", "1 cup quinoa", "2 cups vegetable broth", "1 can black beans, drained and rinsed", "1 cup corn kernels", "1 cup diced tomatoes", "1 tsp cumin", "1 tsp chili powder", "Salt and pepper to taste"],
+      "instructions": "Preheat oven to 375°F. Cut the tops off the bell peppers and remove seeds. In a saucepan, combine quinoa and vegetable broth. Bring to a boil, then reduce heat and simmer until quinoa is cooked. In a large bowl, mix cooked quinoa, black beans, corn, tomatoes, cumin, chili powder, salt, and pepper. Stuff the peppers with the mixture. Bake for 25-30 minutes until peppers are tender. Serve hot.",
+      "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Lemon Garlic Chicken",
+      "ingredients": ["4 boneless, skinless chicken breasts", "1/4 cup olive oil", "3 cloves garlic, minced", "Juice of 2 lemons", "1 tsp dried oregano", "Salt and pepper to taste"],
+      "instructions": "Preheat oven to 400°F. Season chicken breasts with salt, pepper, and oregano. In a skillet, heat olive oil over medium heat. Sear chicken on both sides until golden brown. Transfer chicken to a baking dish. In the same skillet, sauté minced garlic until fragrant. Add lemon juice and bring to a simmer. Pour the lemon-garlic mixture over the chicken. Bake for 20-25 minutes until chicken is cooked through. Serve with your favorite side dishes.",
+      "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mango Avocado Salad",
+      "ingredients": ["2 ripe mangoes, diced", "2 avocados, diced", "1 cup cherry tomatoes, halved", "1/4 cup red onion, finely chopped", "1/4 cup fresh cilantro, chopped", "Juice of 1 lime", "2 tbsp olive oil", "Salt and pepper to taste"],
+      "instructions": "In a large bowl, combine diced mangoes, avocados, cherry tomatoes, red onion, and cilantro. In a small bowl, whisk together lime juice, olive oil, salt, and pepper. Pour the dressing over the salad and gently toss to coat. Serve immediately as a refreshing side dish or light lunch.",
+      "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg"
+    }
+  ]
+  
