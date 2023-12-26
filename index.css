@@ -29,6 +29,23 @@ body {
     padding: 10px;
 }
 
+#greeting-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#name-input {
+    margin-right: 10px;
+}
+
+#submit-btn {
+    cursor: not-allowed;
+}
+
+#submit-btn:disabled {
+    background-color: #ccc;
+}
+
 #recipe-showcase {
     background-color: #ffffff;
     max-width:100%;

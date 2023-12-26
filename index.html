@@ -17,8 +17,15 @@
         
         <div id='welcome-text'>
             <h1 id='welcome-title'>Welcome</h1>
-            <p>To generate a random recipe click the button below</p>
-    
+
+            <div id="greeting-container">
+                <p id='greeting-msg'>Before you begin generating a random recipe, please enter your name below!</p>
+                <form id="name-form">
+                    <input type="text" id="name-input" required>
+                    <button type="submit" id="submit-btn" disabled>Start Generating</button>
+                </form>
+            </div>
+
             <button id='randomize-btn'>Randomize!</button>
         </div>
 

@@ -1,5 +1,14 @@
 !(async function () { 
 
+    const submitBtn = document.querySelector('submit-btn');
+    submitBtn.addEventListener('click', async () => {
+        const nameInput = document.querySelector('name-input');
+
+        const greetingContainer = document.querySelector('greeting-container');
+        greetingContainer.classList.add('hidden');
+    });
+
+
     const button = document.querySelector('#randomize-btn');
     button.addEventListener('click', async () => {
         try {
