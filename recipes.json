@@ -1,24 +1,80 @@
 [
-    {
+  {
       "id": 1,
-      "name": "Savory Stuffed Peppers",
-      "ingredients": ["3 large bell peppers", "1 cup quinoa", "2 cups vegetable broth", "1 can black beans, drained and rinsed", "1 cup corn kernels", "1 cup diced tomatoes", "1 tsp cumin", "1 tsp chili powder", "Salt and pepper to taste"],
-      "instructions": "Preheat oven to 375°F. Cut the tops off the bell peppers and remove seeds. In a saucepan, combine quinoa and vegetable broth. Bring to a boil, then reduce heat and simmer until quinoa is cooked. In a large bowl, mix cooked quinoa, black beans, corn, tomatoes, cumin, chili powder, salt, and pepper. Stuff the peppers with the mixture. Bake for 25-30 minutes until peppers are tender. Serve hot.",
-      "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Lemon Garlic Chicken",
-      "ingredients": ["4 boneless, skinless chicken breasts", "1/4 cup olive oil", "3 cloves garlic, minced", "Juice of 2 lemons", "1 tsp dried oregano", "Salt and pepper to taste"],
-      "instructions": "Preheat oven to 400°F. Season chicken breasts with salt, pepper, and oregano. In a skillet, heat olive oil over medium heat. Sear chicken on both sides until golden brown. Transfer chicken to a baking dish. In the same skillet, sauté minced garlic until fragrant. Add lemon juice and bring to a simmer. Pour the lemon-garlic mixture over the chicken. Bake for 20-25 minutes until chicken is cooked through. Serve with your favorite side dishes.",
-      "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Mango Avocado Salad",
-      "ingredients": ["2 ripe mangoes, diced", "2 avocados, diced", "1 cup cherry tomatoes, halved", "1/4 cup red onion, finely chopped", "1/4 cup fresh cilantro, chopped", "Juice of 1 lime", "2 tbsp olive oil", "Salt and pepper to taste"],
-      "instructions": "In a large bowl, combine diced mangoes, avocados, cherry tomatoes, red onion, and cilantro. In a small bowl, whisk together lime juice, olive oil, salt, and pepper. Pour the dressing over the salad and gently toss to coat. Serve immediately as a refreshing side dish or light lunch.",
-      "image": "https://www.themealdb.com/images/media/meals/1548772327.jpg"
-    }
-  ]
-  
+      "name": "Tri-Colored Pasta Salad",
+      "ingredients": [
+          "1 pound tri-colored spiral pasta",
+          "1 (16 ounce) bottle Italian-style salad dressing",
+          "6 tablespoons salad seasoning mix",
+          "2 cups cherry tomatoes, diced",
+          "1 green bell pepper, chopped",
+          "1 red bell pepper, diced",
+          "½ yellow bell pepper, chopped",
+          "1 (2.25 ounce) can black olives, chopped"
+      ],
+      "instructions": "Gather all ingredients.\n\nBring a large pot of lightly salted water to a boil. Cook pasta in the boiling water, stirring occasionally, until tender yet firm to the bite, about 10 to 12 minutes; rinse under cold water and drain.\n\nWhisk Italian dressing and salad spice mix together until smooth. Combine pasta, tomatoes, bell peppers, and olives in a salad bowl.\n\nPour dressing over salad and toss to coat.\n\nRefrigerate salad, 8 hours to overnight.\n\nEnjoy!",
+      "image": "https://www.allrecipes.com/thmb/PrA5NucOjF_A3NkKi51tR7VtZ_M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/14385-pasta-salad-DDMFS-4x3-28eb5dbe00624780b36cabfef15ca183.jpg",
+      "source": "https://www.allrecipes.com/recipe/14385/pasta-salad/",
+      "tags": ""
+  },
+  {
+    "id": 2,
+    "name": "Pumpkin Pancakes",
+    "ingredients": [
+        "1 ½ cups milk",
+        "1 cup pumpkin puree",
+        "1 large egg",
+        "2 tablespoons vegetable oil",
+        "2 tablespoons vinegar",
+        "2 cups all-purpose flour",
+        "3 tablespoons brown sugar",
+        "2 teaspoons baking powder",
+        "1 teaspoon baking soda",
+        "1 teaspoon ground allspice",
+        "1 teaspoon ground cinnamon",
+        "½ teaspoon ground ginger",
+        "½ teaspoon salt",
+        "cooking spray"
+    ],
+    "instructions": "Gather all ingredients.\n\nStir milk, pumpkin, egg, oil, and vinegar together in a large bowl until well combined.\n\nWhisk flour, brown sugar, baking powder, baking soda, allspice, cinnamon, ginger, and salt together in a separate bowl. Add to pumpkin mixture; whisk just until combined.\n\nSpray a griddle or frying pan with cooking spray; heat over medium-high heat.\n\nPour 3 to 4 tablespoons batter for each pancake onto the hot griddle and flatten batter slightly with a spoon.\n\nCook until small bubbles appear, about 2 minutes.\n\nFlip and cook until golden brown, about 2 more minutes. Repeat with remaining batter.\n\nServe hot and enjoy!",
+    "image": "https://www.allrecipes.com/thmb/ZZOE1FiqQB_gMdfnlLVSJeIsp4k=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/705316_PumpkinPancakes4x3-e7b639bec8d6492c843e601ba3615bd6.jpg",
+    "source": "https://www.allrecipes.com/recipe/17036/pumpkin-pancakes/",
+    "tags": ""
+},
+{
+  "id": 3,
+  "name": "Juicy Roasted Chicken",
+  "ingredients": [
+    "1 (3 pound) whole chicken, giblets removed",
+    "Salt and black pepper to taste",
+    "1 tablespoon onion powder, or to taste",
+    "½ cup butter",
+    "1 stalk celery, leaves removed"
+  ],
+  "instructions": "Preheat the oven to 350 degrees F (175 degrees C).\n\nPlace chicken in a roasting pan; season generously inside and out with onion powder, salt, and pepper. Place 3 tablespoons of butter in chicken cavity; arrange dollops of remaining butter on the outside of chicken. Cut celery into 3 or 4 pieces; place in the chicken cavity.\n\nBake chicken uncovered in the preheated oven until no longer pink at the bone and the juices run clear, about 1 hour and 15 minutes. An instant-read thermometer inserted into the thickest part of the thigh, near the bone, should read 165 degrees F (74 degrees C).\n\nRemove from the oven and baste with drippings. Cover with aluminum foil and allow to rest for about 30 minutes before serving.",
+  "source": "https://www.allrecipes.com/recipe/83557/juicy-roasted-chicken/",
+  "image": "https://www.allrecipes.com/thmb/2IjHMz6C9K52pnhfxMZBmp4TIwU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/83557-juicy-roast-chicken-mfs495-4x3-b619cb42e7ee434db25dcb0a7e8d057d.jpg",
+  "tags": ""
+},
+{
+  "id": 4,
+  "name": "Classic Sloppy Joes",
+  "ingredients": [
+    "1 pound lean ground beef",
+    "¼ cup chopped onion",
+    "¼ cup chopped green bell pepper",
+    "¾ cup ketchup, or to taste",
+    "1 tablespoon brown sugar, or to taste",
+    "1 teaspoon yellow mustard, or to taste",
+    "½ teaspoon garlic powder",
+    "Salt and ground black pepper to taste",
+    "6 hamburger buns, split"
+  ],
+  "instructions": "Heat a large skillet over medium heat. Cook and stir lean ground beef in the hot skillet until some of the fat starts to render, 3 to 4 minutes. Add onion and bell pepper; continue to cook until vegetables have softened and beef is cooked through, 3 to 5 more minutes.\n\nStir in ketchup, brown sugar, mustard, and garlic powder; season with salt and pepper. Reduce heat to low and simmer for 20 to 30 minutes.\n\nDivide meat mixture evenly among hamburger buns.",
+  "source": "https://www.allrecipes.com/recipe/24264/sloppy-joes-ii/",
+  "image": "https://www.allrecipes.com/thmb/ru7nWSmdrpp4W4JTekJJRluZF30=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/24264-sloppy-joes-dianne-1x1-1-ca246f276afe4196b0ea921df2574466.jpg",
+  "tags": ""
+}
+
+
+]

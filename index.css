@@ -113,6 +113,9 @@ body {
     border: rgb(212, 122, 122);
     border-style: solid;
 }
+#recipe-source {
+    text-align: center;
+}
 
 #ingredients, #instructions {
     padding: 2rem;

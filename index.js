@@ -15,17 +15,19 @@
         recipe.ingredients.forEach(ingredient => {
             recipeInfo += `<li> ▸${ingredient}</li>`;
         });
-
         ingredients.innerHTML = recipeInfo;
 
         let updateImg = document.querySelector('#recipe-img');
         updateImg.src = recipe.image;
 
+        let updateSource =document.querySelector('#recipe-source');
+        updateSource.href = recipe.source;
+
         let updateRecipeName = document.querySelector('#welcome-title');
         updateRecipeName.textContent = recipe.name;
 
         let updateInstructions = document.querySelector('#instructions-list');
-        updateInstructions.textContent = recipe.instructions;
+        updateInstructions.innerHTML = recipe.instructions.replace(/\n/g, '<br>');
 
     };
 
@@ -46,6 +48,9 @@
     
             let updateImg = document.querySelector('#recipe-img');
             updateImg.src = api.strMealThumb;
+
+            let updateSource =document.querySelector('#recipe-source');
+            updateSource.href = api.strSource;
     
             let updateRecipeName = document.querySelector('#welcome-title');
             updateRecipeName.textContent = api.strMeal;
