@@ -13,7 +13,7 @@
         let recipeInfo = '';
 
         recipe.ingredients.forEach(ingredient => {
-            recipeInfo += `<li> ▸${ingredient}</li>`;
+            recipeInfo += `<li> • ${ingredient}</li>`;
         });
         ingredients.innerHTML = recipeInfo;
 
@@ -42,7 +42,7 @@
                 let ingredient = api[`strIngredient${i}`];
     
                 if (measure && ingredient) {
-                    recipeInfo += `<li>▸ ${measure} ${ingredient}</li>`;
+                    recipeInfo += `<li>• ${measure} ${ingredient}</li>`;
                 } 
             }
     
@@ -78,8 +78,7 @@
         unhideRandomBtn.classList.remove('hidden');
     });
 
-    const button = document.querySelector('#randomize-btn');
-    button.addEventListener('click', async () => {
+    const generateRandomRecipe = async () => {
         try {
             const response = await axios.get('recipes.json');
             const recipes = response.data;
@@ -95,6 +94,11 @@
         } catch (error) {
             //Write something here for errors
         }
+    };
+
+    const button = document.querySelector('#randomize-btn');
+    button.addEventListener('click', () => {
+        generateRandomRecipe();
     });
 
     const pizza = document.querySelector('#pizza');

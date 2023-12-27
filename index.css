@@ -98,7 +98,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 #recipe-info {
@@ -118,10 +118,10 @@ body {
 }
 
 #ingredients, #instructions {
-    padding: 2rem;
     background-color: white;
     min-height: 100%; 
     max-width: 40%;
+    padding: 1rem;
 }
 
 #h3-center {
