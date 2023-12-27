@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     margin: 0;
@@ -9,18 +13,49 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-height: 2rem;
+    min-width: 100%;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    min-height: 32px;
+    min-width: auto;
+}
+.nav-links {
+    list-style: none;
+    padding-right: 20px;
+    font-size: 14px;
+}
+.nav-links > li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+.nav-links > li > a {
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+}
+.nav-links > li > a:hover {
+    color: #fcfcfb;
+}
+.nav-links > li > a.active {
+    color: #040300;
+}
+
 #title {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-color: 
-    rgb(212, 122, 122);
     text-align: center;
     max-width: 50rem;
     min-height: auto;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     border-radius: 20px;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #welcome-text {
@@ -50,7 +85,6 @@ body {
     text-align: center;
     color: #000000;
     font-weight: bolder;
-    padding-top: 3rem;
 }
 
 .midsection-container {
@@ -58,9 +92,9 @@ body {
     flex-wrap: wrap;
     margin: auto;
     max-width: 65%;
-    padding: 20px;
     justify-content: center;
     gap: 3rem;
+    padding: 2.2rem;
 }
 
 .border {
@@ -78,8 +112,7 @@ body {
     max-width: 100%;
     object-fit: cover;
     border-radius: 12px;
-    border: rgb(212, 122, 122);
-    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .square {
@@ -98,29 +131,27 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    padding: 2rem;
 }
 
 #recipe-info {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: white;
     padding: 1rem;
 }
 #recipe-img {
     max-width: 20rem;
     margin: auto;
-    border: rgb(212, 122, 122);
-    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #recipe-source {
     text-align: center;
 }
-
 #ingredients, #instructions {
     background-color: white;
     min-height: 100%; 
-    max-width: 40%;
+    max-width: 30rem;
     padding: 1rem;
 }
 
@@ -157,4 +188,15 @@ li {
 #randomize-btn:active {
 	position:relative;
 	top:1px;
+}
+
+
+footer {
+    bottom: 0;
+    min-width: 100%;
+    height: 2rem;
+    text-align: center;
+    font-size: 15px;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    color: black;
 }
