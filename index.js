@@ -1,5 +1,7 @@
 !(async function () { 
 
+    const getErrorMsg= document.querySelector('#greeting-container');
+
     const toggleView = () => {
         const mainBodyDiv = document.querySelector('.main-body');
         mainBodyDiv.classList.remove('hidden');
@@ -84,8 +86,6 @@
         const unhideRandomBtn = document.querySelector('.button-container');
         unhideRandomBtn.classList.remove('hidden');
 
-        const hideMidsection = document.querySelector('.midsection-container')
-        hideMidsection.classList.add('hidden');
     });
     
 
@@ -103,7 +103,7 @@
             randomRecipeFormatting(recipe);
 
         } catch (error) {
-            //Write something here for errors
+            getErrorMsg.textContent = `${error}`;
         }
     };
 
@@ -122,7 +122,7 @@
             recipeFormatting(recipe);
 
         } catch (error) {
-            //Write something here for errors
+            getErrorMsg.textContent = `${error}`;
         }
     });
 
@@ -136,7 +136,7 @@
             recipeFormatting(recipe);
 
         } catch (error) {
-            //Write something here for errors
+            getErrorMsg.textContent = `${error}`;
         }
     });
 
@@ -150,7 +150,7 @@
             recipeFormatting(recipe);
 
         } catch (error) {
-            //Write something here for errors
+            getErrorMsg.textContent = `${error}`;
         }
     });
   

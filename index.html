@@ -24,7 +24,7 @@
             <h1 id='welcome-title'>Welcome</h1>
 
             <div id="greeting-container">
-                <p id='greeting-msg'>To start the random recipe generator, enter your name below to begin!</p>
+                <p id='greeting-msg'>To start the random recipe generator, enter your name below to begin</p>
 
                 <div class="name-form">
                     <label for="input" class="text">Name:</label>
@@ -43,25 +43,25 @@
     </div>
 
     <div class='recipe-showcase'>
-        <h2 class="midsection-title">Check out these great recipes!</h2>
+        <h2 class="midsection-title">Check out our suggested recipes below!</h2>
 
         <div class="midsection-container">
             <div class="square">
-                <div class="border">
+                <div class="image-showcase">
                     <img id='pizza' src="https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg">
                 </div>
                 <p>Pizza Express Margherita</p>
             </div>
 
             <div class="square">
-                <div class="border">
+                <div class="image-showcase">
                     <img id='biryani' src="https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg">
                 </div>
                 <p>Lamb Biryani</p>
             </div>
 
             <div class="square">
-                <div class="border">
+                <div class="image-showcase">
                     <img id='kfchicken' src="https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg">
                 </div>
                 <p>Kentucky Fried Chicken</p>
@@ -72,20 +72,22 @@
     
     <div class='main-body hidden'>
 
-        <img id='recipe-img'src=''>
-        
-        <a id='recipe-source' href='' target='_blank'>Source</a>
- 
         <div id='recipe-info'>
+            <div id='recipe-details'>
+                <img id='recipe-img'src=''>
+                <a id='recipe-source' href='' target='_blank'>Source</a>
+            </div>
+
             <div id='ingredients'>
                 <h3 id='h3-center'>Ingredients</h3>
                 <div id='ingredients-list'></div>
             </div>
+  
+        </div>
 
-            <div id='instructions'>
-                <h3 id='h3-center'>Instructions</h3>
-                <div id='instructions-list'></div>
-            </div>
+        <div id='instructions'>
+            <h3 id='h3-center'>Instructions</h3>
+            <div id='instructions-list'></div>
         </div>
     </div>
 
