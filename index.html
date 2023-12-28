@@ -24,11 +24,14 @@
             <h1 id='welcome-title'>Welcome</h1>
 
             <div id="greeting-container">
-                <p id='greeting-msg'>Before you begin, please enter your name below!</p>
-                <form id="name-form">
-                    <input type="text" id="name-input" required>
+                <p id='greeting-msg'>To start the random recipe generator, enter your name below to begin!</p>
+
+                <div class="name-form">
+                    <label for="input" class="text">Name:</label>
+                    <input type="text" placeholder="Write here..." name="input" class="input" required>
                     <button type="submit" id="submit-btn">Submit</button>
-                </form>
+                </div>
+
             </div>
 
             <div class='button-container hidden'>
@@ -63,6 +66,7 @@
                 </div>
                 <p>Kentucky Fried Chicken</p>
             </div>
+            
         </div>
     </div>
     

@@ -65,18 +65,29 @@
 
     const submitBtn = document.querySelector('#submit-btn');
     submitBtn.addEventListener('click', async (event) => {
-        event.preventDefault(); 
-        const nameInput = document.querySelector('#name-input');
+        event.preventDefault();
     
-        const greetingContainer = document.querySelector('#name-form');
-        greetingContainer.classList.add('hidden'); 
-    
+        const nameInput = document.querySelector('.input');
+
+        if (nameInput.value.trim() === '') {
+            alert('Please enter a name before submitting.');
+            return;
+        }
+
         const greetingMsg = document.querySelector('#greeting-msg');
         greetingMsg.textContent = `${nameInput.value}, click the button below to generate a random recipe!`;
-   
+    
+        const greetingContainer = document.querySelector('.name-form');
+        greetingContainer.classList.add('hidden');
+    
+    
         const unhideRandomBtn = document.querySelector('.button-container');
         unhideRandomBtn.classList.remove('hidden');
+
+        const hideMidsection = document.querySelector('.midsection-container')
+        hideMidsection.classList.add('hidden');
     });
+    
 
     const generateRandomRecipe = async () => {
         try {

@@ -6,9 +6,6 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
 }
@@ -64,16 +61,45 @@ body {
 }
 
 #greeting-container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
 }
 
-#name-input {
-    margin-right: 10px;
+.name-form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+    padding: 1rem;
+}
+  
+.name-form label.text {
+    font-size: 0.75rem;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    width: fit-content;
+}
+  
+.name-form input[type=text].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #00020d solid;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+  
+.name-form input[type=text].input:focus {
+    outline: none;
 }
 
-#submit-btn {
-    cursor:pointer;
-}
 
 #recipe-showcase {
     background-color: #ffffff;
@@ -166,26 +192,40 @@ body {
 li {
     list-style-type: none;
 }
-
-#randomize-btn {
+#submit-btn {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background:linear-gradient(to bottom, #f7f5f6 5%, #ffffff 100%);
 	background-color:#ededed;
 	border-radius:6px;
 	border:1px solid #dcdcdc;
 	display:inline-block;
 	cursor:pointer;
-	color:rgb(0, 0, 0);
+	color:rgb(14, 0, 0);
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+#randomize-btn {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #f7f5f6 5%, #ffffff 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(14, 0, 0);
 	font-size:15px;
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
 }
-#randomize-btn:hover {
+#randomize-btn,#submit-btn:hover {
 	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
 	background-color:#dfdfdf;
 }
-#randomize-btn:active {
+#randomize-btn,#submit-btn:active {
 	position:relative;
 	top:1px;
 }
