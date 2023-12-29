@@ -63,6 +63,33 @@
         });
         updateList.innerHTML = recipeInfo;
     };
+
+    const generateRandomRecipe = async () => {
+        try {
+            const fetchRecipe = await axios.get('/recipes.json');
+            const recipes = fetchRecipe.data;
+    
+            const randomRecipe = Math.floor(Math.random() * recipes.length);
+            let recipe = recipes[randomRecipe]; 
+    
+            console.log(recipe);
+    
+            toggleView();
+            randomRecipeFormatting(recipe);
+
+        } catch (error) {
+            getErrorMsg.textContent = `${error}`;
+        }
+    };
+
+    const welcomeDisplay = document.querySelector('.svg_icon');
+    welcomeDisplay.addEventListener('click', () => {
+        
+        const nameInput = document.querySelector('.input');
+
+        const greetingMsg = document.querySelector('.text');
+        greetingMsg.textContent = `${nameInput.value}, click the button below to generate a random recipe!`;
+    });
     
 
     const submitBtn = document.querySelector('#submit-btn');
@@ -88,24 +115,6 @@
 
     });
     
-
-    const generateRandomRecipe = async () => {
-        try {
-            const fetchRecipe = await axios.get('/recipes.json');
-            const recipes = fetchRecipe.data;
-    
-            const randomRecipe = Math.floor(Math.random() * recipes.length);
-            let recipe = recipes[randomRecipe]; 
-    
-            console.log(recipe);
-    
-            toggleView();
-            randomRecipeFormatting(recipe);
-
-        } catch (error) {
-            getErrorMsg.textContent = `${error}`;
-        }
-    };
 
     const button = document.querySelector('#randomize-btn');
     button.addEventListener('click', () => {

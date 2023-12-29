@@ -19,16 +19,59 @@ body {
 }
 
 h1 {
-  color: #070400;
+  color: #f3f0ec;
   font-size: 10vw;
   font-family: 'Fjalla One', sans-serif;
-  background-color: #cfc4bf;
-  mix-blend-mode: screen;
-  padding: 20px;
+  padding: 1rem;
 }
 
 h2 {
   color: rgba(244, 225, 225, 0.4);
   font-family: 'Satisfy', cursive;
   font-size: 35px;
+  padding: 1rem;
+}
+
+.custom_input {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 100%;
+}
+
+.input {
+	font-size: 18px;
+	padding: 5px 10px;
+	width: 100%;
+	padding-right: 10px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #C4D1EB;
+	border-radius: 5px;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+	transition: .3s ease;
+}
+
+.input:focus {
+	background: #F2F2F2;
+	border: 1px solid #11613a;
+	border-radius: 10px;
+}
+
+.input::placeholder {
+	color: #424543;
+}
+
+.svg_icon {
+	position: absolute;
+	right: 10px;
+	fill: #11613a;
+	width: 18px;
+	height: 18px;
+}
+
+.svg_icon:hover {
+  cursor: pointer;
+  fill: #65c998;
 }
