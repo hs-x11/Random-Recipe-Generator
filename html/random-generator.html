@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/nav-footer.css">
+    <link rel="stylesheet" href="/css/random-generator.css">
+
+    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src='/random-generator.js'></script>
+
+    <title>Random Recipe Generator</title>
+</head>
+<body>
+
+    <nav class="nav-container">  
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/recipes-list.html">Recipes</a></li></li>
+            <li><a class="active" href="/html/random-generator.html">Random Generator</a></li></li>
+        </ul> 
+    </nav>
+
+    <div id='title'> 
+        
+        <div id='welcome-text'>
+            <h1 id='welcome-title'>Let's Begin</h1>
+
+            <div id="greeting-container">
+                <p id='greeting-msg'>To start the random recipe generator, enter your name below to begin</p>
+
+                <div class="name-form">
+                    <label for="input" class="text">Name:</label>
+                    <input type="text" placeholder="Write here..." name="input" class="input" required>
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div>
+
+            </div>
+
+            <div class='button-container hidden'>
+                <button id='randomize-btn'>Randomize!</button>
+              </div>
+              
+        </div>
+
+    </div>
+
+    <div class='recipe-showcase'>
+        <h2 class="midsection-title">Check out our suggested recipes below!</h2>
+
+        <div class="midsection-container">
+            <div class="square">
+                <div class="image-showcase">
+                    <img id='pizza' src="https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg">
+                </div>
+                <p>Pizza Express Margherita</p>
+            </div>
+
+            <div class="square">
+                <div class="image-showcase">
+                    <img id='biryani' src="https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg">
+                </div>
+                <p>Lamb Biryani</p>
+            </div>
+
+            <div class="square">
+                <div class="image-showcase">
+                    <img id='kfchicken' src="https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg">
+                </div>
+                <p>Kentucky Fried Chicken</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class='main-body hidden'>
+
+        <div id='recipe-info'>
+            <div id='recipe-details'>
+                <img id='recipe-img'src=''>
+                <a id='recipe-source' href='' target='_blank'>Source</a>
+            </div>
+
+            <div id='ingredients'>
+                <h3 id='h3-center'>Ingredients</h3>
+                <div id='ingredients-list'></div>
+            </div>
+  
+        </div>
+
+        <div id='instructions'>
+            <h3 id='h3-center'>Instructions</h3>
+            <div id='instructions-list'></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© Copyright hs_x11</p>
+    </footer>
+</body>
+</html>

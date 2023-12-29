@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    padding: 2%;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #CFC4BF;
+}
