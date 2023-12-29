@@ -81,15 +81,6 @@
             getErrorMsg.textContent = `${error}`;
         }
     };
-
-    const welcomeDisplay = document.querySelector('.svg_icon');
-    welcomeDisplay.addEventListener('click', () => {
-        
-        const nameInput = document.querySelector('.input');
-
-        const greetingMsg = document.querySelector('.text');
-        greetingMsg.textContent = `${nameInput.value}, click the button below to generate a random recipe!`;
-    });
     
 
     const submitBtn = document.querySelector('#submit-btn');
