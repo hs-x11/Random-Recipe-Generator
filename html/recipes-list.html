@@ -23,15 +23,48 @@
 
 
     <h1>Recipes List</h1>
-     <ul>
-        <li><a href="/list/3.html"> Juicy Roasted Chicken</a></li>
-        <li><a href="/list/2.html">Pumpkin Pancakes</a></li>
-        <li><a href="/list/1.html">Tri-Colored Pasta Salad</a></li>
+
+    <input id="input" onkeyup="searchBar()" type="text" name="search" placeholder="Search...">
+
+    <ul id='list'>
+        <li class='recipes'><a href="/list/3.html">Juicy Roasted Chicken</a></li>
+        <li class='recipes'><a href="/list/2.html">Pumpkin Pancakes</a></li>
+        <li class='recipes'><a href="/list/1.html">Tri-Colored Pasta Salad</a></li>
     </ul>
+    
+    <p id="notFoundMessage" style="display: none;">Sorry, we don't have that recipe :(</p>
     
     <footer>
         <p>© Copyright hs_x11</p>
     </footer>
+    
+    <script>
+        function searchBar() {
+            let input = document.querySelector('#input').value.toLowerCase();
+            let list = document.getElementsByClassName('recipes');
+            let notFoundMessage = document.getElementById('notFoundMessage');
+            let itemFound = false;
+    
+            for (let i = 0; i < list.length; i++) {
+                let listItemText = list[i].textContent.toLowerCase();
+    
+                if (!listItemText.includes(input)) {
+                    list[i].style.display = "none";
+                } else {
+                    list[i].style.display = "list-item";
+                    itemFound = true;
+                }
+            }
+            
+            if (itemFound) {
+            notFoundMessage.style.display = "none";
+
+            } else {
+            notFoundMessage.style.display = "block";
+        }
+        }
+    </script>
+    
     
 </body>
 </html>
