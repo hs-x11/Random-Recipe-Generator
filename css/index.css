@@ -19,13 +19,15 @@ body {
 }
 
 h1 {
-  color: #f3f0ec;
+  color: #fffde6;
+  text-shadow: 3px 2px 0px rgba(0,0,0,0.6);
   font-size: 10vw;
   font-family: 'Fjalla One', sans-serif;
 }
 
 h2 {
-  color: rgba(244, 225, 225, 0.4);
+  color: rgba(255, 241, 195, 0.4);
+  text-shadow: 3px 0px 5px rgba(0,0,0,0.6);
   font-family: 'Satisfy', cursive;
   font-size: 35px;
 }
