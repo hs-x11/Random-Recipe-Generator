@@ -46,3 +46,7 @@ a:hover{
 #input:hover {
     outline: 1px solid lightgrey;
 }
+
+.hidden {
+    display: none;
+}
