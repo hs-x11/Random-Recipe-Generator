@@ -7,21 +7,21 @@
     min-height: auto;
     margin: auto;
     margin-top: 2rem;
-    margin-bottom: 1rem;
     background: white;
     padding: 1rem;
-   
 }
 
 #welcome-text {
     flex: 1; 
 
 }
-
 #greeting-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#greeting-msg {
     padding: 1rem;
 }
 
@@ -120,7 +120,6 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: white;
-    padding: 1rem;
 }
 #recipe-img {
     max-width: 20rem;
@@ -136,7 +135,7 @@
     background-color: white;
     min-height: 100%; 
     max-width: 30rem;
-    padding: 1rem;
+    padding: 0.7rem;
 }
 #instructions {
     background-color: white;
