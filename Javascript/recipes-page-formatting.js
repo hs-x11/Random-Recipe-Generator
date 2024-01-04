@@ -36,79 +36,100 @@
     };
 
     const displayRecipe = async () => {
-        if (window.location.pathname === '/list/1.html') {
-            const recipe = await getRecipe(1);
-            recipeFormatting(recipe);
-    
-        } else if (window.location.pathname === '/list/2.html') {
-            const recipe = await getRecipe(2); 
-            recipeFormatting(recipe);
-    
-        } else if (window.location.pathname === '/list/3.html') {
-            const recipe = await getRecipe(3);
-            recipeFormatting(recipe);
+        let recipe = '';
+        
+        switch(window.location.pathname) {
+            case '/list/1.html':
+                recipe = await getRecipe(1);
+                recipeFormatting(recipe);
+                break;
 
-        } else if (window.location.pathname === '/list/4.html') {
-            const recipe = await getRecipe(4);
-            recipeFormatting(recipe);    
+            case '/list/2.html':
+                recipe = await getRecipe(2);
+                recipeFormatting(recipe);
+                break;
 
-        } else if (window.location.pathname === '/list/5.html') {
-            const recipe = await getRecipe(5); 
-            recipeFormatting(recipe);
-    
-        } else if (window.location.pathname === '/list/6.html') {
-            const recipe = await getRecipe(6);
-            recipeFormatting(recipe);
+            case '/list/3.html':
+                recipe = await getRecipe(3);
+                recipeFormatting(recipe);
+                break;
+                    
+            case '/list/4.html':
+                recipe = await getRecipe(4);
+                recipeFormatting(recipe);
+                break;  
 
-        } else if (window.location.pathname === '/list/7.html') {
-            const recipe = await getRecipe(7);
-            recipeFormatting(recipe);    
+            case '/list/5.html':
+                recipe = await getRecipe(5);
+                recipeFormatting(recipe);
+                break;
 
-        } else if (window.location.pathname === '/list/8.html') {
-            const recipe = await getRecipe(8); 
-            recipeFormatting(recipe);
-    
-        } else if (window.location.pathname === '/list/9.html') {
-            const recipe = await getRecipe(9);
-            recipeFormatting(recipe);
+            case '/list/6.html':
+                recipe = await getRecipe(6);
+                recipeFormatting(recipe);
+                break;
 
-        } else if (window.location.pathname === '/list/10.html') {
-            const recipe = await getRecipe(10);
-            recipeFormatting(recipe);    
+            case '/list/7.html':
+                recipe = await getRecipe(7);
+                recipeFormatting(recipe);
+                break;
+                    
+            case '/list/8.html':
+                recipe = await getRecipe(8);
+                recipeFormatting(recipe);
+                break;  
+            case '/list/9.html':
+                recipe = await getRecipe(9);
+                recipeFormatting(recipe);
+                break;
 
-        } else if (window.location.pathname === '/list/11.html') {
-            const recipe = await getRecipe(11); 
-            recipeFormatting(recipe);
-    
-        } else if (window.location.pathname === '/list/12.html') {
-            const recipe = await getRecipe(12);
-            recipeFormatting(recipe);
-            
-        } else if (window.location.pathname === '/list/13.html') {
-            const recipe = await getRecipe(13);
-            recipeFormatting(recipe);
+            case '/list/10.html':
+                recipe = await getRecipe(10);
+                recipeFormatting(recipe);
+                break;
 
-        } else if (window.location.pathname === '/list/14.html') {
-            const recipe = await getRecipe(14);
-            recipeFormatting(recipe);    
+            case '/list/11.html':
+                recipe = await getRecipe(11);
+                recipeFormatting(recipe);
+                break;
+                    
+            case '/list/12.html':
+                recipe = await getRecipe(12);
+                recipeFormatting(recipe);
+                break;  
 
-        } else if (window.location.pathname === '/list/15.html') {
-            const recipe = await getRecipe(15); 
-            recipeFormatting(recipe);
-    
-        } else if (window.location.pathname === '/list/16.html') {
-            const recipe = await getRecipe(16);
-            recipeFormatting(recipe);
+            case '/list/13.html':
+                recipe = await getRecipe(13);
+                recipeFormatting(recipe);
+                break;
 
-        } else if (window.location.pathname === '/list/17.html') {
-            const recipe = await getRecipe(17);
-            recipeFormatting(recipe);    
+            case '/list/14.html':
+                recipe = await getRecipe(14);
+                recipeFormatting(recipe);
+                break;
 
-        } else if (window.location.pathname === '/list/18.html') {
-            const recipe = await getRecipe(18); 
-            recipeFormatting(recipe);
+            case '/list/15.html':
+                recipe = await getRecipe(15);
+                recipeFormatting(recipe);
+                break;
+                    
+            case '/list/16.html':
+                recipe = await getRecipe(16);
+                recipeFormatting(recipe);
+                break;  
+
+            case '/list/17.html':
+                recipe = await getRecipe(17);
+                recipeFormatting(recipe);
+                break;  
+
+            case '/list/18.html':
+                recipe = await getRecipe(18);
+                recipeFormatting(recipe);
+                break;  
         }
-    }
+        
+    };
     
     displayRecipe();
 
