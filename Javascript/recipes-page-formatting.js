@@ -31,7 +31,8 @@
             return found;
 
         } catch (error) {
-            console.error(error);
+            let updateRecipeName = document.querySelector('#recipe-title');
+            updateRecipeName.textContent = error.message;
         }
     };
 
