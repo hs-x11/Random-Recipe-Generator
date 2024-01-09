@@ -32,6 +32,7 @@ body {
 h2 {
     padding: 2%;
     text-align: center;
+	font-size: 34px;
 }
 
 .lower > p {
@@ -41,3 +42,14 @@ h2 {
     padding-bottom: 2rem;
 }
 
+.socials {
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+	padding-bottom: 2rem;
+}
+
+.socials > img {
+	width: auto;
+	height: 4rem;
+}
