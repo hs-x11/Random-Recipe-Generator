@@ -28,11 +28,12 @@ a:hover{
 }
 
 #input {
+    display: inline-block;
     min-width: 30rem;
     background-color: #ffffff;
     color: #000000;
     padding: .15rem .5rem;
-    min-height: 40px;
+    min-height: 3rem;
     border-radius: 4px;
     outline: none;
     border: solid;
@@ -49,4 +50,11 @@ a:hover{
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 768px) {
+    #input {
+        min-width: 50%;
+        max-height: auto; 
+    }
 }
