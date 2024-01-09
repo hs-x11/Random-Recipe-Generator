@@ -1,5 +1,3 @@
-
-
 #title {
     display: flex;
     align-items: center;
@@ -8,7 +6,6 @@
     max-width: 50rem;
     min-height: auto;
     margin: auto;
-    margin-top: 2rem;
     background: white;
     padding: 1rem;
 }
