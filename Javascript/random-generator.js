@@ -66,7 +66,7 @@
 
     const generateRandomRecipe = async () => {
         try {
-            const fetchRecipe = await axios.get('/recipes.json');
+            const fetchRecipe = await axios.get('../recipes.json');
             const recipes = fetchRecipe.data;
     
             const randomRecipe = Math.floor(Math.random() * recipes.length);

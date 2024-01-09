@@ -24,7 +24,7 @@
 
     const getRecipe = async (recipeID) => {
         try {
-            const fetchRecipe = await axios.get('/recipes.json');
+            const fetchRecipe = await axios.get('../recipes.json');
             const recipes = fetchRecipe.data;
             
             const found = recipes.find(recipe => recipe.id === recipeID);
