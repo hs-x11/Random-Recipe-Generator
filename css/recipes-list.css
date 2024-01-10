@@ -55,8 +55,9 @@ a:hover{
 #list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 2rem; 
+    grid-gap: 3rem; 
     margin: 0 5rem;
+    text-align: center;
 }
 
 .recipes img {
@@ -69,15 +70,7 @@ a:hover{
     transform: scale(1.1); 
 }
 
-.recipes a {
-    display: block;
-    flex-grow: 1; 
-}
 
-.recipes p {
-    margin-top: 8px;
-    text-align: center; 
-}
 
 @media (max-width: 768px) {
     #input {
