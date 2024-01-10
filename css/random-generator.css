@@ -14,11 +14,6 @@
     flex: 1; 
 
 }
-#greeting-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 #greeting-msg {
     padding: 1rem;
