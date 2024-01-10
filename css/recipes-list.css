@@ -54,15 +54,9 @@ a:hover{
 
 #list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2rem; 
     margin: 0 5rem;
-}
-.recipes {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
 }
 
 .recipes img {
@@ -91,8 +85,4 @@ a:hover{
         max-height: auto; 
     }
 
-    #list {
-        display: flex;
-        flex-direction: column;
-    }
 }
