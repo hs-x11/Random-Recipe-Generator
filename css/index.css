@@ -37,19 +37,14 @@ h2 {
 	flex-wrap: wrap;
 	gap: 5rem;
 	padding-bottom: 2rem;
-    font-size: 1.8rem;
 }
 
-.fa-envelope,
-.fa-github,
-.fa-facebook {
-    color: #212020;
+.socials img {
+    max-width: 3rem;
 }
 
-.fa-envelope:hover,
-.fa-github:hover,
-.fa-facebook:hover {
-    color: #cd926a;
+.socials img:hover {
+    transform: scale(1.1); 
 }
 
 
