@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/nav-footer.css">
     <link rel="stylesheet" href="../css/recipes-list.css">
 
-    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src='../Javascript/search-bar.js'></script>
 
     <title>Recipes List</title>
 </head>
@@ -25,7 +25,7 @@
 
     <h1>Recipes List</h1>
 
-    <input id="input" onkeyup="searchBar()" type="text" name="search" placeholder="Search...">
+    <input id="input" type="text" name="search" placeholder="Search...">
 
     <ul id='list'>
         <li class='recipes'><a href="../list/1.html">Tri-Colored Pasta Salad</a></li>
@@ -54,34 +54,7 @@
     <footer>
         <p>© Copyright hs_x11</p>
     </footer>
-    
-    <script>
-        function searchBar() {
-            let input = document.querySelector('#input').value.toLowerCase();
-            let list = document.getElementsByClassName('recipes');
-            let notFoundMessage = document.querySelector('.notFoundMsg');
-            let itemFound = false;
-    
-            for (let i = 0; i < list.length; i++) {
-                let listItemText = list[i].textContent.toLowerCase();
-    
-                if (!listItemText.includes(input)) {
-                    list[i].style.display = "none";
-                } else {
-                    list[i].style.display = "list-item";
-                    itemFound = true;
-                }
-            }
-            
-            if (itemFound) {
-            notFoundMessage.classList.add('hidden');
-
-            } else {
-            notFoundMessage.classList.remove('hidden');
-            }
-        }
-    </script>
-    
+        
     
 </body>
 </html>
