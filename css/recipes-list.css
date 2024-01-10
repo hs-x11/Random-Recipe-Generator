@@ -70,8 +70,6 @@ a:hover{
     transform: scale(1.1); 
 }
 
-
-
 @media (max-width: 768px) {
     #input {
         min-width: 50%;
