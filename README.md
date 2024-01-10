@@ -6,7 +6,7 @@ Happy cooking!
 
 ## Live Demo
 
-Explore the live version of the Recipe Generator Website [here](https://hs-x11.github.io/Random-Recipe-Generator/).
+Explore the live version of the Website [here](https://hs-x11.github.io/Random-Recipe-Generator/).
 
 ## Usage
 
