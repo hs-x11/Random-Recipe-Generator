@@ -36,7 +36,7 @@
 
             recipes.forEach((recipe) => {
                 recipeInfo += `
-                    <li class='recipes'><img src="${recipe.image}" alt="${recipe.name}"><a href="../list/${recipe.id}.html">${recipe.name}</a></li>
+                    <li class='recipes'><a href="../list/${recipe.id}.html"><img src="${recipe.image}" alt="${recipe.name}"><br>${recipe.name}</a></li>
                 `;
                 listItems.innerHTML = recipeInfo;
 
