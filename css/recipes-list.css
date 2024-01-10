@@ -52,9 +52,43 @@ a:hover{
     display: none;
 }
 
+#list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: .1rem;
+    grid-row-gap: 2rem; 
+    margin: 0 5rem;
+}
+.recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.recipes img {
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.recipes a {
+    display: block;
+    flex-grow: 1; 
+}
+
+.recipes p {
+    margin-top: 8px;
+    text-align: center; 
+}
+
 @media (max-width: 768px) {
     #input {
         min-width: 50%;
         max-height: auto; 
+    }
+
+    #list {
+        display: flex;
+        flex-direction: column;
     }
 }
