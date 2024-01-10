@@ -28,26 +28,22 @@
 
     const getRecipeList = async () => {
         try {
-            const response = await fetch('../recipes.json');
-            const recipes = await response.json();
+            let fetchRecipe = await axios.get('../recipes.json');
+            let recipes = fetchRecipe.data;
     
-            const listItems = document.querySelectorAll('.recipes');
-    
-            recipes.forEach((recipe, index) => {
-                const listItem = listItems[index];
-                const link = listItem.querySelector('a');
-                const img = listItem.querySelector('img');
-    
-                link.textContent = recipe.name;
-    
-                link.href = `../list/${recipe.id}.html`; 
-                
-                img.src = recipe.image;
-                img.alt = recipe.name; 
+            let listItems = document.querySelector('#list');
+            let recipeInfo = '';
+
+            recipes.forEach((recipe) => {
+                recipeInfo += `
+                    <li class='recipes'><img src="${recipe.image}" alt="${recipe.name}"><a href="../list/${recipe.id}.html">${recipe.name}</a></li>
+                `;
+                listItems.innerHTML = recipeInfo;
+
             });
 
         } catch (error) {
-            console.error('Error fetching recipe data:', error);
+            recipeInfo.textContent = `${error}`;
         }
     };
 
