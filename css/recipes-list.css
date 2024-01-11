@@ -52,14 +52,12 @@ a:hover{
     display: none;
 }
 
-
-
 #list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     grid-gap: 3rem; 
     text-align: center;
-    margin: 1rem;
+    padding: 4rem 4rem 2rem 4rem;
 }
 
 .recipes img {
