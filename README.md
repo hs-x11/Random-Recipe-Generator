@@ -13,16 +13,15 @@ Explore the live version of the Website [here](https://hs-x11.github.io/Random-R
 - Visit the website and click on the "Random Generator" tab in the navigation menu.
 - On the "Random Generator" page, click the "Randomize!" button to get a random recipe.
 
-## Author
-
-- [Hasina S.](https://github.com/hs-x11)
-
 ## Acknowledgments
 
 - Special thanks to all the sources where I was able to grab the recipes. Each source is linked when the recipe is displayed.
-- Home photo credits [here](https://unsplash.com/@masjidmpd)
+- [Api](https://www.themealdb.com) I used for the recommended recipes on the "Random Generator" tab.
+- Home photo credits [here](https://unsplash.com/@masjidmpd).
 
+## Author
 
+- [Hasina S.](https://github.com/hs-x11)
 
   
   
