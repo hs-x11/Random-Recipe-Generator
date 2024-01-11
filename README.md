@@ -16,7 +16,7 @@ Explore the live version of the Website [here](https://hs-x11.github.io/Random-R
 ## Acknowledgments
 
 - Special thanks to all the sources where I was able to grab the recipes. Each source is linked when the recipe is displayed.
-- [Api](https://www.themealdb.com) I used for the recommended recipes on the "Random Generator" tab.
+- [Api](https://www.themealdb.com/api.php) I used for the recommended recipes on the "Random Generator" tab.
 - Home photo credits [here](https://unsplash.com/@masjidmpd).
 
 ## Author
