@@ -54,7 +54,7 @@ a:hover{
 
 #list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 4fr));
     grid-gap: 3rem; 
     text-align: center;
     padding: 4rem 4rem 2rem 4rem;
