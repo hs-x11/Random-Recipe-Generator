@@ -63,10 +63,9 @@ a:hover{
 }
 
 .recipes img {
-    max-width: 15rem;
-    max-height: 10rem;
+    width: 15rem;
+    height: 10rem;
     object-fit: cover;
-    border-radius: 12px;
 }
 
 .recipes {
