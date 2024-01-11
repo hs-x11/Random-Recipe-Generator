@@ -22,14 +22,13 @@
     object-fit: cover;
     width: 20rem;
     height: 20rem;
-    padding: 0 0 2rem 4rem; 
-
 }
 
 #recipe-details {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 2rem 4rem; 
 }
 
 #ingredients {
@@ -63,12 +62,11 @@ li {
 }
 
 @media (max-width: 768px) {
-    #recipe-img {
+    #recipe-details {
         object-fit: cover;
         width: 20rem;
         height: 20rem;
-        padding: 1rem; 
-    
+        padding: 0 2rem 2rem 2rem; 
     }
 
 }

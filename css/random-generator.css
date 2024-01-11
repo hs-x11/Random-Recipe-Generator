@@ -7,7 +7,7 @@
     min-height: auto;
     margin: auto;
     background: white;
-    padding: 1rem;
+    padding: 1rem 1rem 3rem 1rem;
 }
 
 #welcome-text {
@@ -87,14 +87,13 @@
     object-fit: cover;
     width: 20rem;
     height: 20rem;
-    padding: 0 0 2rem 4rem; 
-
 }
 
 #recipe-details {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 2rem 4rem; 
 }
 
 #ingredients {
@@ -153,11 +152,11 @@ li {
 }
 
 @media (max-width: 768px) {
-    #recipe-img {
+    #recipe-details {
         object-fit: cover;
         width: 20rem;
         height: 20rem;
-        padding: 1rem; 
+        padding: 0 2rem 2rem 2rem; 
     
     }
 
