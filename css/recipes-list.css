@@ -52,18 +52,25 @@ a:hover{
     display: none;
 }
 
+
+
 #list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 3rem; 
-    margin: 0 5rem;
     text-align: center;
+    margin: 1rem;
 }
 
 .recipes img {
-    width: 15rem;
-    height: 10rem;
+    max-width: 15rem;
+    max-height: 10rem;
     object-fit: cover;
+    border-radius: 12px;
+}
+
+.recipes {
+    transition: all .2s ease-in-out; 
 }
 
 .recipes:hover {
